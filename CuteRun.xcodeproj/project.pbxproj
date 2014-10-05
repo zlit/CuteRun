@@ -9,13 +9,28 @@
 /* Begin PBXBuildFile section */
 		1B129AF719DD661500EAE0DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B129AF619DD661500EAE0DC /* main.m */; };
 		1B129AFA19DD661500EAE0DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B129AF919DD661500EAE0DC /* AppDelegate.m */; };
-		1B129B0519DD661500EAE0DC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B129B0319DD661500EAE0DC /* LaunchScreen.xib */; };
 		1B129B1119DD661500EAE0DC /* CuteRunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B129B1019DD661500EAE0DC /* CuteRunTests.m */; };
 		1B25BF0419DD66E200CC32BC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B25BF0119DD66C600CC32BC /* CoreFoundation.framework */; };
 		1B25BF0519DD66E200CC32BC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B25BEFF19DD66C200CC32BC /* CoreLocation.framework */; };
 		1B25BF0619DD66E200CC32BC /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B25BEFD19DD66BD00CC32BC /* CoreMotion.framework */; };
 		1B25BF0719DD66E200CC32BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B25BEFB19DD66B600CC32BC /* UIKit.framework */; };
-		1B25BF0B19DD67C600CC32BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B25BF0A19DD67C600CC32BC /* Images.xcassets */; };
+		1B25BF1519DE4BD100CC32BC /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B25BF0F19DE4BD100CC32BC /* RECommonFunctions.m */; };
+		1B25BF1619DE4BD100CC32BC /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B25BF1119DE4BD100CC32BC /* RESideMenu.m */; };
+		1B25BF1719DE4BD100CC32BC /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B25BF1319DE4BD100CC32BC /* UIViewController+RESideMenu.m */; };
+		1B25BF1C19DE4CA100CC32BC /* ZLLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B25BF1919DE4CA100CC32BC /* ZLLeftMenuViewController.m */; };
+		1B25BF1D19DE4CA100CC32BC /* ZLStepCountingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B25BF1B19DE4CA100CC32BC /* ZLStepCountingViewController.m */; };
+		1B25BF1F19DE83A500CC32BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B25BF1E19DE83A500CC32BC /* Images.xcassets */; };
+		1B25BF2719DE879700CC32BC /* MDRadialProgressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B25BF2219DE879700CC32BC /* MDRadialProgressLabel.m */; };
+		1B25BF2819DE879700CC32BC /* MDRadialProgressTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B25BF2419DE879700CC32BC /* MDRadialProgressTheme.m */; };
+		1B25BF2919DE879700CC32BC /* MDRadialProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B25BF2619DE879700CC32BC /* MDRadialProgressView.m */; };
+		1B25BF3E19DEA09600CC32BC /* UIView+CTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B25BF3D19DEA09600CC32BC /* UIView+CTExtensions.m */; };
+		1B25BF4119DEA0B500CC32BC /* ZLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B25BF4019DEA0B500CC32BC /* ZLViewController.m */; };
+		1B25BF4419DEA25E00CC32BC /* UIColor+CTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B25BF4319DEA25E00CC32BC /* UIColor+CTExtensions.m */; };
+		1B25BF4E19DECDB700CC32BC /* ZLDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B25BF4D19DECDB700CC32BC /* ZLDevice.m */; };
+		1B4282D119DFE38C005DB9A3 /* ZLStepCountingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B4282D019DFE38C005DB9A3 /* ZLStepCountingViewController.xib */; };
+		1B4282DA19E00A9F005DB9A3 /* ZLPlayPauseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4282D919E00A9F005DB9A3 /* ZLPlayPauseView.m */; };
+		1B4282E119E0E243005DB9A3 /* ZLAccelerometerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4282E019E0E243005DB9A3 /* ZLAccelerometerManager.m */; };
+		1B4282E519E0F29C005DB9A3 /* ZLStepsCountDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4282E419E0F29C005DB9A3 /* ZLStepsCountDataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +49,6 @@
 		1B129AF619DD661500EAE0DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1B129AF819DD661500EAE0DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1B129AF919DD661500EAE0DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1B129B0419DD661500EAE0DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1B129B0A19DD661500EAE0DC /* CuteRunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuteRunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B129B0F19DD661500EAE0DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B129B1019DD661500EAE0DC /* CuteRunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CuteRunTests.m; sourceTree = "<group>"; };
@@ -42,7 +56,38 @@
 		1B25BEFD19DD66BD00CC32BC /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		1B25BEFF19DD66C200CC32BC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1B25BF0119DD66C600CC32BC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		1B25BF0A19DD67C600CC32BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1B25BF0E19DE4BD100CC32BC /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		1B25BF0F19DE4BD100CC32BC /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		1B25BF1019DE4BD100CC32BC /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
+		1B25BF1119DE4BD100CC32BC /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
+		1B25BF1219DE4BD100CC32BC /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		1B25BF1319DE4BD100CC32BC /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		1B25BF1819DE4CA100CC32BC /* ZLLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLLeftMenuViewController.h; sourceTree = "<group>"; };
+		1B25BF1919DE4CA100CC32BC /* ZLLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLLeftMenuViewController.m; sourceTree = "<group>"; };
+		1B25BF1A19DE4CA100CC32BC /* ZLStepCountingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLStepCountingViewController.h; sourceTree = "<group>"; };
+		1B25BF1B19DE4CA100CC32BC /* ZLStepCountingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLStepCountingViewController.m; sourceTree = "<group>"; };
+		1B25BF1E19DE83A500CC32BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1B25BF2119DE879700CC32BC /* MDRadialProgressLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDRadialProgressLabel.h; sourceTree = "<group>"; };
+		1B25BF2219DE879700CC32BC /* MDRadialProgressLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDRadialProgressLabel.m; sourceTree = "<group>"; };
+		1B25BF2319DE879700CC32BC /* MDRadialProgressTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDRadialProgressTheme.h; sourceTree = "<group>"; };
+		1B25BF2419DE879700CC32BC /* MDRadialProgressTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDRadialProgressTheme.m; sourceTree = "<group>"; };
+		1B25BF2519DE879700CC32BC /* MDRadialProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDRadialProgressView.h; sourceTree = "<group>"; };
+		1B25BF2619DE879700CC32BC /* MDRadialProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDRadialProgressView.m; sourceTree = "<group>"; };
+		1B25BF3C19DEA09600CC32BC /* UIView+CTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CTExtensions.h"; sourceTree = "<group>"; };
+		1B25BF3D19DEA09600CC32BC /* UIView+CTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CTExtensions.m"; sourceTree = "<group>"; };
+		1B25BF3F19DEA0B500CC32BC /* ZLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLViewController.h; sourceTree = "<group>"; };
+		1B25BF4019DEA0B500CC32BC /* ZLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLViewController.m; sourceTree = "<group>"; };
+		1B25BF4219DEA25E00CC32BC /* UIColor+CTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CTExtensions.h"; sourceTree = "<group>"; };
+		1B25BF4319DEA25E00CC32BC /* UIColor+CTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CTExtensions.m"; sourceTree = "<group>"; };
+		1B25BF4C19DECDB700CC32BC /* ZLDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLDevice.h; sourceTree = "<group>"; };
+		1B25BF4D19DECDB700CC32BC /* ZLDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLDevice.m; sourceTree = "<group>"; };
+		1B4282D019DFE38C005DB9A3 /* ZLStepCountingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZLStepCountingViewController.xib; sourceTree = "<group>"; };
+		1B4282D819E00A9F005DB9A3 /* ZLPlayPauseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPlayPauseView.h; sourceTree = "<group>"; };
+		1B4282D919E00A9F005DB9A3 /* ZLPlayPauseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPlayPauseView.m; sourceTree = "<group>"; };
+		1B4282DF19E0E243005DB9A3 /* ZLAccelerometerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLAccelerometerManager.h; sourceTree = "<group>"; };
+		1B4282E019E0E243005DB9A3 /* ZLAccelerometerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLAccelerometerManager.m; sourceTree = "<group>"; };
+		1B4282E319E0F29C005DB9A3 /* ZLStepsCountDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLStepsCountDataModel.h; sourceTree = "<group>"; };
+		1B4282E419E0F29C005DB9A3 /* ZLStepsCountDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLStepsCountDataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +134,12 @@
 		1B129AF319DD661400EAE0DC /* CuteRun */ = {
 			isa = PBXGroup;
 			children = (
+				1B25BF3819DEA09600CC32BC /* ZLFoundation */,
+				1B25BF0C19DE4BD100CC32BC /* Extern */,
+				1B25BF1419DE4BD100CC32BC /* UI */,
+				1B4282E219E0EF40005DB9A3 /* DataModel */,
 				1B129AF819DD661500EAE0DC /* AppDelegate.h */,
 				1B129AF919DD661500EAE0DC /* AppDelegate.m */,
-				1B129B0319DD661500EAE0DC /* LaunchScreen.xib */,
 				1B129AF419DD661500EAE0DC /* Supporting Files */,
 				1B25BF0919DD671200CC32BC /* Resource */,
 			);
@@ -138,9 +186,132 @@
 		1B25BF0919DD671200CC32BC /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				1B25BF0A19DD67C600CC32BC /* Images.xcassets */,
+				1B25BF1E19DE83A500CC32BC /* Images.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		1B25BF0C19DE4BD100CC32BC /* Extern */ = {
+			isa = PBXGroup;
+			children = (
+				1B4282DE19E0E243005DB9A3 /* ZLAccelerometerManager */,
+				1B4282D719E00A59005DB9A3 /* PlayPauseView */,
+				1B25BF2019DE879700CC32BC /* RadiaProgress */,
+				1B25BF0D19DE4BD100CC32BC /* RESideMenu */,
+			);
+			path = Extern;
+			sourceTree = "<group>";
+		};
+		1B25BF0D19DE4BD100CC32BC /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1B25BF0E19DE4BD100CC32BC /* RECommonFunctions.h */,
+				1B25BF0F19DE4BD100CC32BC /* RECommonFunctions.m */,
+				1B25BF1019DE4BD100CC32BC /* RESideMenu.h */,
+				1B25BF1119DE4BD100CC32BC /* RESideMenu.m */,
+				1B25BF1219DE4BD100CC32BC /* UIViewController+RESideMenu.h */,
+				1B25BF1319DE4BD100CC32BC /* UIViewController+RESideMenu.m */,
+			);
+			path = RESideMenu;
+			sourceTree = "<group>";
+		};
+		1B25BF1419DE4BD100CC32BC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1B25BF1819DE4CA100CC32BC /* ZLLeftMenuViewController.h */,
+				1B25BF1919DE4CA100CC32BC /* ZLLeftMenuViewController.m */,
+				1B25BF1A19DE4CA100CC32BC /* ZLStepCountingViewController.h */,
+				1B25BF1B19DE4CA100CC32BC /* ZLStepCountingViewController.m */,
+				1B4282D019DFE38C005DB9A3 /* ZLStepCountingViewController.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1B25BF2019DE879700CC32BC /* RadiaProgress */ = {
+			isa = PBXGroup;
+			children = (
+				1B25BF2119DE879700CC32BC /* MDRadialProgressLabel.h */,
+				1B25BF2219DE879700CC32BC /* MDRadialProgressLabel.m */,
+				1B25BF2319DE879700CC32BC /* MDRadialProgressTheme.h */,
+				1B25BF2419DE879700CC32BC /* MDRadialProgressTheme.m */,
+				1B25BF2519DE879700CC32BC /* MDRadialProgressView.h */,
+				1B25BF2619DE879700CC32BC /* MDRadialProgressView.m */,
+			);
+			path = RadiaProgress;
+			sourceTree = "<group>";
+		};
+		1B25BF3819DEA09600CC32BC /* ZLFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				1B25BF4B19DECDB700CC32BC /* Device */,
+				1B25BF3919DEA09600CC32BC /* UIKit */,
+			);
+			path = ZLFoundation;
+			sourceTree = "<group>";
+		};
+		1B25BF3919DEA09600CC32BC /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1B25BF3A19DEA09600CC32BC /* BaseClass */,
+				1B25BF3B19DEA09600CC32BC /* Extension */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		1B25BF3A19DEA09600CC32BC /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				1B25BF3F19DEA0B500CC32BC /* ZLViewController.h */,
+				1B25BF4019DEA0B500CC32BC /* ZLViewController.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		1B25BF3B19DEA09600CC32BC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1B25BF4219DEA25E00CC32BC /* UIColor+CTExtensions.h */,
+				1B25BF4319DEA25E00CC32BC /* UIColor+CTExtensions.m */,
+				1B25BF3C19DEA09600CC32BC /* UIView+CTExtensions.h */,
+				1B25BF3D19DEA09600CC32BC /* UIView+CTExtensions.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1B25BF4B19DECDB700CC32BC /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				1B25BF4C19DECDB700CC32BC /* ZLDevice.h */,
+				1B25BF4D19DECDB700CC32BC /* ZLDevice.m */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		1B4282D719E00A59005DB9A3 /* PlayPauseView */ = {
+			isa = PBXGroup;
+			children = (
+				1B4282D819E00A9F005DB9A3 /* ZLPlayPauseView.h */,
+				1B4282D919E00A9F005DB9A3 /* ZLPlayPauseView.m */,
+			);
+			path = PlayPauseView;
+			sourceTree = "<group>";
+		};
+		1B4282DE19E0E243005DB9A3 /* ZLAccelerometerManager */ = {
+			isa = PBXGroup;
+			children = (
+				1B4282DF19E0E243005DB9A3 /* ZLAccelerometerManager.h */,
+				1B4282E019E0E243005DB9A3 /* ZLAccelerometerManager.m */,
+			);
+			path = ZLAccelerometerManager;
+			sourceTree = "<group>";
+		};
+		1B4282E219E0EF40005DB9A3 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				1B4282E319E0F29C005DB9A3 /* ZLStepsCountDataModel.h */,
+				1B4282E419E0F29C005DB9A3 /* ZLStepsCountDataModel.m */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,8 +395,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B129B0519DD661500EAE0DC /* LaunchScreen.xib in Resources */,
-				1B25BF0B19DD67C600CC32BC /* Images.xcassets in Resources */,
+				1B25BF1F19DE83A500CC32BC /* Images.xcassets in Resources */,
+				1B4282D119DFE38C005DB9A3 /* ZLStepCountingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,8 +414,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B25BF1619DE4BD100CC32BC /* RESideMenu.m in Sources */,
 				1B129AFA19DD661500EAE0DC /* AppDelegate.m in Sources */,
+				1B25BF4419DEA25E00CC32BC /* UIColor+CTExtensions.m in Sources */,
+				1B25BF4119DEA0B500CC32BC /* ZLViewController.m in Sources */,
+				1B25BF1C19DE4CA100CC32BC /* ZLLeftMenuViewController.m in Sources */,
+				1B4282E519E0F29C005DB9A3 /* ZLStepsCountDataModel.m in Sources */,
+				1B25BF2919DE879700CC32BC /* MDRadialProgressView.m in Sources */,
+				1B25BF1719DE4BD100CC32BC /* UIViewController+RESideMenu.m in Sources */,
+				1B25BF1519DE4BD100CC32BC /* RECommonFunctions.m in Sources */,
+				1B25BF2719DE879700CC32BC /* MDRadialProgressLabel.m in Sources */,
+				1B25BF4E19DECDB700CC32BC /* ZLDevice.m in Sources */,
+				1B25BF1D19DE4CA100CC32BC /* ZLStepCountingViewController.m in Sources */,
+				1B25BF2819DE879700CC32BC /* MDRadialProgressTheme.m in Sources */,
+				1B25BF3E19DEA09600CC32BC /* UIView+CTExtensions.m in Sources */,
 				1B129AF719DD661500EAE0DC /* main.m in Sources */,
+				1B4282DA19E00A9F005DB9A3 /* ZLPlayPauseView.m in Sources */,
+				1B4282E119E0E243005DB9A3 /* ZLAccelerometerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,17 +451,6 @@
 			targetProxy = 1B129B0B19DD661500EAE0DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1B129B0319DD661500EAE0DC /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B129B0419DD661500EAE0DC /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1B129B1219DD661500EAE0DC /* Debug */ = {
@@ -312,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -347,7 +522,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -358,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Zhaolei Li (4R5D3MW52L)";
 				INFOPLIST_FILE = CuteRun/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -370,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Zhaolei Li (4R5D3MW52L)";
 				INFOPLIST_FILE = CuteRun/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
