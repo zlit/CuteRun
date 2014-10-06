@@ -96,7 +96,10 @@
     textLabel.text = titles[indexPath.row];
     [textLabel zl_setWidth:60];
     [textLabel zl_setHeight:30];
-    textLabel.textColor = [UIColor whiteColor];
+    textLabel.textColor = [UIColor zl_getColorWithRed:37
+                                                green:156
+                                                 blue:208
+                                                alpha:1];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:images[indexPath.row]]];
 
     [textLabel zl_setOriginX:180];

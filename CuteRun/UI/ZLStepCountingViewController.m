@@ -40,16 +40,16 @@
     
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
     {
-        [self.navigationController.navigationBar setBarTintColor:[UIColor zl_getColorWithRed:213.0
-                                                                                       green:37.0
-                                                                                        blue:38.0
+        [self.navigationController.navigationBar setBarTintColor:[UIColor zl_getColorWithRed:37
+                                                                                       green:156
+                                                                                        blue:208
                                                                                        alpha:1]];
     }else{
         [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init]
                                                       forBarMetrics:UIBarMetricsDefault];
-        [self.navigationController.navigationBar setBackgroundColor:[UIColor zl_getColorWithRed:213.0
-                                                                                          green:37.0
-                                                                                           blue:38.0
+        [self.navigationController.navigationBar setBackgroundColor:[UIColor zl_getColorWithRed:37
+                                                                                          green:156
+                                                                                           blue:208
                                                                                           alpha:1]];
     }
 }
@@ -71,9 +71,9 @@
     [self.view addSubview:radialView];
     
     ZLPlayPauseView *pView = [[ZLPlayPauseView alloc] initWithFrame:CGRectMake(270, 150, 20, 20)
-                                                              color:[UIColor zl_getColorWithRed:213.0
-                                                                                          green:37.0
-                                                                                           blue:38.0
+                                                              color:[UIColor zl_getColorWithRed:37
+                                                                                          green:156
+                                                                                           blue:208
                                                                                           alpha:1]];
     pView.delegate = self;
     [self.view addSubview:pView];

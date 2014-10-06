@@ -199,6 +199,13 @@
     });
     
     [self.view addSubview:self.backgroundImageView];
+    
+    UIView *view = [[UIView alloc] initWithFrame:self.view.frame];
+    view.backgroundColor = [UIColor whiteColor];
+    view.alpha = 0.5;
+    [self.view addSubview:view];
+#warning 此处把图片虚化了
+    
     [self.view addSubview:self.menuViewContainer];
     [self.view addSubview:self.contentViewContainer];
     
@@ -701,8 +708,9 @@
 - (void)setBackgroundImage:(UIImage *)backgroundImage
 {
     _backgroundImage = backgroundImage;
-    if (self.backgroundImageView)
+    if (self.backgroundImageView){
         self.backgroundImageView.image = backgroundImage;
+    }
 }
 
 - (void)setContentViewController:(UIViewController *)contentViewController
