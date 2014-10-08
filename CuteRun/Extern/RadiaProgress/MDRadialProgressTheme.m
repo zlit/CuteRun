@@ -31,8 +31,14 @@ static const int kMaxFontSize = 64;
 	self = [super init];
 	if (self) {
 		// View
-		self.completedColor = [UIColor zl_getColorWithRed:228 green:74 blue:60 alpha:1.0];
-		self.incompletedColor = [UIColor zl_getColorWithRed:234 green:234 blue:234 alpha:1.0];
+        self.completedColor = [UIColor zl_getColorWithRed:37
+                                                    green:156
+                                                     blue:208
+                                                    alpha:0.9];
+		self.incompletedColor = [UIColor zl_getColorWithRed:234
+                                                      green:234
+                                                       blue:234
+                                                      alpha:1.0];
 		self.sliceDividerColor = [UIColor whiteColor];
 		self.centerColor = [UIColor clearColor];
 		self.thickness = 30;

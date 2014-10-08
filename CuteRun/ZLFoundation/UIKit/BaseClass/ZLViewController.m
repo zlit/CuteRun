@@ -20,6 +20,25 @@
     self.view.frame = [[UIScreen mainScreen] bounds];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
+
+#pragma mark 视图数组统一下移88坐标
+- (void)moveDownSubViews:(NSArray *)array
+{
+    [self moveDownSubViews:array withHeight:-64];
+}
+#pragma mark 视图数组统一下移
+- (void)moveDownSubViews:(NSArray *)array withHeight:(CGFloat)height
+{
+    for (UIView *view in array) {
+        [view setFrame:CGRectMake(view.zl_originX, view.zl_originY + height, view.zl_width, view.zl_height)];
+//        [view setCenter:CGPointMake(view.center.x, view.center.y+height)];
+    }
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

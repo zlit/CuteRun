@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "UIView+CTExtensions.h"
 #import "UIColor+CTExtensions.h"
-#import "ZLDevice.h"
+
 
 @interface ZLViewController : UIViewController
+
+- (void)moveDownSubViews:(NSArray *)array;
 
 @end

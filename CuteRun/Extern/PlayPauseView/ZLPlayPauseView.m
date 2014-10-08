@@ -10,6 +10,13 @@
 #import "UIColor+CTExtensions.h"
 #import <math.h>
 
+@interface ZLPlayPauseView()
+
+@property(nonatomic,assign) float iconHeight;
+@property(nonatomic,assign) float iconWidth;
+
+@end
+
 @implementation ZLPlayPauseView
 
 - (ZLPlayPauseView *)initWithFrame:(CGRect)frame
@@ -19,9 +26,10 @@
     if (self) {
         self.frame = frame;
         self.bgColor = color;
-        self.isPlay = YES;
+        self.isPlay = NO;
         self.userInteractionEnabled = YES;
-        
+        self.iconHeight = frame.size.height/2.0;
+        self.iconWidth = frame.size.width/2.0;
         UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureRecognized:)];
         tapGestureRecognizer.delegate = self;
         [self addGestureRecognizer:tapGestureRecognizer];
@@ -37,11 +45,11 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextBeginPath(context);//标记
     // Drawing code
-    if(self.isPlay){
+    if(self.isPlay == NO){
         CGPoint sPoints[3];//坐标点
         sPoints[0] =CGPointMake(0, 0);//坐标1
-        sPoints[1] =CGPointMake(0, rect.size.height);//坐标2
-        sPoints[2] =CGPointMake([self getThirdPointWithLength:rect.size.height], rect.size.height/2.0);//坐标3
+        sPoints[1] =CGPointMake(0, self.iconHeight);//坐标2
+        sPoints[2] =CGPointMake([self getThirdPointWithLength:self.iconHeight], self.iconHeight/2.0);//坐标3
         CGContextAddLines(context, sPoints, 3);//添加线
         CGContextClosePath(context);//封起来
         [self.bgColor setFill]; //设置填充色
@@ -49,12 +57,12 @@
         CGContextDrawPath(context, kCGPathFillStroke); //根据坐标绘制路径
     }else{
         [self drawRectWithContext:context
-                       totalWidth:rect.size.width
+                       totalWidth:self.iconWidth
                  beginCoefficient:1
                    endCoefficient:2];
         
         [self drawRectWithContext:context
-                       totalWidth:rect.size.width
+                       totalWidth:self.iconWidth
                  beginCoefficient:3
                    endCoefficient:4];
     }

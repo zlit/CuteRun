@@ -31,6 +31,15 @@
 		1B4282DA19E00A9F005DB9A3 /* ZLPlayPauseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4282D919E00A9F005DB9A3 /* ZLPlayPauseView.m */; };
 		1B4282E119E0E243005DB9A3 /* ZLAccelerometerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4282E019E0E243005DB9A3 /* ZLAccelerometerManager.m */; };
 		1B4282E519E0F29C005DB9A3 /* ZLStepsCountDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4282E419E0F29C005DB9A3 /* ZLStepsCountDataModel.m */; };
+		1B4282EF19E260DC005DB9A3 /* ZLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4282EE19E260DC005DB9A3 /* ZLLocationManager.m */; };
+		1B4282F119E26655005DB9A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4282F019E26654005DB9A3 /* CoreGraphics.framework */; };
+		1B42830219E3DCC2005DB9A3 /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42830119E3DCC2005DB9A3 /* FileUtil.m */; };
+		1B42830519E3E4DB005DB9A3 /* ZLUserInfoDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42830419E3E4DB005DB9A3 /* ZLUserInfoDataModel.m */; };
+		1B42831419E4C05C005DB9A3 /* ZLNaviBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42831119E4C05C005DB9A3 /* ZLNaviBackgroundView.m */; };
+		1B42831519E4C05D005DB9A3 /* ZLUserRegistView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42831319E4C05C005DB9A3 /* ZLUserRegistView.m */; };
+		1B42831719E4C1C8005DB9A3 /* ZLUserRegistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B42831619E4C1C8005DB9A3 /* ZLUserRegistView.xib */; };
+		1B42831A19E4C2E4005DB9A3 /* ZLSystemParameterUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42831919E4C2E4005DB9A3 /* ZLSystemParameterUtil.m */; };
+		310AE65BEB164825A43188A8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C38429C7C31343B193CA44FA /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +97,22 @@
 		1B4282E019E0E243005DB9A3 /* ZLAccelerometerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLAccelerometerManager.m; sourceTree = "<group>"; };
 		1B4282E319E0F29C005DB9A3 /* ZLStepsCountDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLStepsCountDataModel.h; sourceTree = "<group>"; };
 		1B4282E419E0F29C005DB9A3 /* ZLStepsCountDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLStepsCountDataModel.m; sourceTree = "<group>"; };
+		1B4282ED19E260DC005DB9A3 /* ZLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLLocationManager.h; sourceTree = "<group>"; };
+		1B4282EE19E260DC005DB9A3 /* ZLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLLocationManager.m; sourceTree = "<group>"; };
+		1B4282F019E26654005DB9A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1B42830019E3DCC2005DB9A3 /* FileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtil.h; sourceTree = "<group>"; };
+		1B42830119E3DCC2005DB9A3 /* FileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtil.m; sourceTree = "<group>"; };
+		1B42830319E3E4DB005DB9A3 /* ZLUserInfoDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLUserInfoDataModel.h; sourceTree = "<group>"; };
+		1B42830419E3E4DB005DB9A3 /* ZLUserInfoDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLUserInfoDataModel.m; sourceTree = "<group>"; };
+		1B42831019E4C05C005DB9A3 /* ZLNaviBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLNaviBackgroundView.h; sourceTree = "<group>"; };
+		1B42831119E4C05C005DB9A3 /* ZLNaviBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLNaviBackgroundView.m; sourceTree = "<group>"; };
+		1B42831219E4C05C005DB9A3 /* ZLUserRegistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLUserRegistView.h; sourceTree = "<group>"; };
+		1B42831319E4C05C005DB9A3 /* ZLUserRegistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLUserRegistView.m; sourceTree = "<group>"; };
+		1B42831619E4C1C8005DB9A3 /* ZLUserRegistView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZLUserRegistView.xib; sourceTree = "<group>"; };
+		1B42831819E4C2E4005DB9A3 /* ZLSystemParameterUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSystemParameterUtil.h; sourceTree = "<group>"; };
+		1B42831919E4C2E4005DB9A3 /* ZLSystemParameterUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSystemParameterUtil.m; sourceTree = "<group>"; };
+		438AF8B3111247D6B26DDDD2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		C38429C7C31343B193CA44FA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +120,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4282F119E26655005DB9A3 /* CoreGraphics.framework in Frameworks */,
 				1B25BF0419DD66E200CC32BC /* CoreFoundation.framework in Frameworks */,
 				1B25BF0519DD66E200CC32BC /* CoreLocation.framework in Frameworks */,
 				1B25BF0619DD66E200CC32BC /* CoreMotion.framework in Frameworks */,
 				1B25BF0719DD66E200CC32BC /* UIKit.framework in Frameworks */,
+				310AE65BEB164825A43188A8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,10 +142,13 @@
 		1B129AE819DD661400EAE0DC = {
 			isa = PBXGroup;
 			children = (
+				1B4282F019E26654005DB9A3 /* CoreGraphics.framework */,
 				1B129AF319DD661400EAE0DC /* CuteRun */,
 				1B129B0D19DD661500EAE0DC /* CuteRunTests */,
 				1B129AF219DD661400EAE0DC /* Products */,
 				1B25BF0319DD66CD00CC32BC /* frameworks */,
+				438AF8B3111247D6B26DDDD2 /* Pods.xcconfig */,
+				D01ED001381145D4B6F73188 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,6 +224,7 @@
 		1B25BF0C19DE4BD100CC32BC /* Extern */ = {
 			isa = PBXGroup;
 			children = (
+				1B4282EC19E260DC005DB9A3 /* ZLLocationManager */,
 				1B4282DE19E0E243005DB9A3 /* ZLAccelerometerManager */,
 				1B4282D719E00A59005DB9A3 /* PlayPauseView */,
 				1B25BF2019DE879700CC32BC /* RadiaProgress */,
@@ -218,6 +249,7 @@
 		1B25BF1419DE4BD100CC32BC /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1B42830F19E4C05C005DB9A3 /* VIew */,
 				1B25BF1819DE4CA100CC32BC /* ZLLeftMenuViewController.h */,
 				1B25BF1919DE4CA100CC32BC /* ZLLeftMenuViewController.m */,
 				1B25BF1A19DE4CA100CC32BC /* ZLStepCountingViewController.h */,
@@ -243,6 +275,7 @@
 		1B25BF3819DEA09600CC32BC /* ZLFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				1B4282FF19E3DCC2005DB9A3 /* Utils */,
 				1B25BF4B19DECDB700CC32BC /* Device */,
 				1B25BF3919DEA09600CC32BC /* UIKit */,
 			);
@@ -310,8 +343,50 @@
 			children = (
 				1B4282E319E0F29C005DB9A3 /* ZLStepsCountDataModel.h */,
 				1B4282E419E0F29C005DB9A3 /* ZLStepsCountDataModel.m */,
+				1B42830319E3E4DB005DB9A3 /* ZLUserInfoDataModel.h */,
+				1B42830419E3E4DB005DB9A3 /* ZLUserInfoDataModel.m */,
 			);
 			path = DataModel;
+			sourceTree = "<group>";
+		};
+		1B4282EC19E260DC005DB9A3 /* ZLLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				1B4282ED19E260DC005DB9A3 /* ZLLocationManager.h */,
+				1B4282EE19E260DC005DB9A3 /* ZLLocationManager.m */,
+			);
+			path = ZLLocationManager;
+			sourceTree = "<group>";
+		};
+		1B4282FF19E3DCC2005DB9A3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1B42830019E3DCC2005DB9A3 /* FileUtil.h */,
+				1B42830119E3DCC2005DB9A3 /* FileUtil.m */,
+				1B42831819E4C2E4005DB9A3 /* ZLSystemParameterUtil.h */,
+				1B42831919E4C2E4005DB9A3 /* ZLSystemParameterUtil.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1B42830F19E4C05C005DB9A3 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				1B42831019E4C05C005DB9A3 /* ZLNaviBackgroundView.h */,
+				1B42831119E4C05C005DB9A3 /* ZLNaviBackgroundView.m */,
+				1B42831219E4C05C005DB9A3 /* ZLUserRegistView.h */,
+				1B42831319E4C05C005DB9A3 /* ZLUserRegistView.m */,
+				1B42831619E4C1C8005DB9A3 /* ZLUserRegistView.xib */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		D01ED001381145D4B6F73188 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C38429C7C31343B193CA44FA /* libPods.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,9 +396,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B129B1419DD661500EAE0DC /* Build configuration list for PBXNativeTarget "CuteRun" */;
 			buildPhases = (
+				1727B413196A47A6B987BFDB /* Check Pods Manifest.lock */,
 				1B129AED19DD661400EAE0DC /* Sources */,
 				1B129AEE19DD661400EAE0DC /* Frameworks */,
 				1B129AEF19DD661400EAE0DC /* Resources */,
+				2DD25F46CF22494EB5D19C7E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -397,6 +474,7 @@
 			files = (
 				1B25BF1F19DE83A500CC32BC /* Images.xcassets in Resources */,
 				1B4282D119DFE38C005DB9A3 /* ZLStepCountingViewController.xib in Resources */,
+				1B42831719E4C1C8005DB9A3 /* ZLUserRegistView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,14 +487,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1727B413196A47A6B987BFDB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2DD25F46CF22494EB5D19C7E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1B129AED19DD661400EAE0DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B42831419E4C05C005DB9A3 /* ZLNaviBackgroundView.m in Sources */,
 				1B25BF1619DE4BD100CC32BC /* RESideMenu.m in Sources */,
 				1B129AFA19DD661500EAE0DC /* AppDelegate.m in Sources */,
 				1B25BF4419DEA25E00CC32BC /* UIColor+CTExtensions.m in Sources */,
+				1B4282EF19E260DC005DB9A3 /* ZLLocationManager.m in Sources */,
 				1B25BF4119DEA0B500CC32BC /* ZLViewController.m in Sources */,
 				1B25BF1C19DE4CA100CC32BC /* ZLLeftMenuViewController.m in Sources */,
 				1B4282E519E0F29C005DB9A3 /* ZLStepsCountDataModel.m in Sources */,
@@ -425,12 +538,16 @@
 				1B25BF1519DE4BD100CC32BC /* RECommonFunctions.m in Sources */,
 				1B25BF2719DE879700CC32BC /* MDRadialProgressLabel.m in Sources */,
 				1B25BF4E19DECDB700CC32BC /* ZLDevice.m in Sources */,
+				1B42830519E3E4DB005DB9A3 /* ZLUserInfoDataModel.m in Sources */,
 				1B25BF1D19DE4CA100CC32BC /* ZLStepCountingViewController.m in Sources */,
 				1B25BF2819DE879700CC32BC /* MDRadialProgressTheme.m in Sources */,
+				1B42830219E3DCC2005DB9A3 /* FileUtil.m in Sources */,
 				1B25BF3E19DEA09600CC32BC /* UIView+CTExtensions.m in Sources */,
 				1B129AF719DD661500EAE0DC /* main.m in Sources */,
 				1B4282DA19E00A9F005DB9A3 /* ZLPlayPauseView.m in Sources */,
+				1B42831A19E4C2E4005DB9A3 /* ZLSystemParameterUtil.m in Sources */,
 				1B4282E119E0E243005DB9A3 /* ZLAccelerometerManager.m in Sources */,
+				1B42831519E4C05D005DB9A3 /* ZLUserRegistView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +648,7 @@
 		};
 		1B129B1519DD661500EAE0DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 438AF8B3111247D6B26DDDD2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -544,6 +662,7 @@
 		};
 		1B129B1619DD661500EAE0DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 438AF8B3111247D6B26DDDD2 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
