@@ -14,8 +14,6 @@
 #import "ZLUserRegistView.h"
 #import "ZLSystemParameterUtil.h"
 
-#define kUserInfoPath @"userInfo.txt"
-
 @interface ZLStepCountingViewController ()
 
 @property(nonatomic,strong) NSTimer *timeIntervalTimer;
@@ -38,17 +36,6 @@
     [self setUpAccelerometerManager];
     [self moveDownSubViews:[self.view subviews]];//因为navigationBar加了背景,所有背景的view的起始高度移到了nav之下
     [self.view setBackgroundColor:[UIColor whiteColor]];
-    [self initUserInfo];
-}
-
--(void)initUserInfo
-{
-    if([FileUtil isExistsFilePath:[FileUtil dataFilePath:kUserInfoPath]]){
-        self.userInfoDataModel = [ZLUserInfoDataModel getUserInfoDataModel];
-    }else{
-        ZLUserRegistView *userRegistView = [[ZLUserRegistView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-        [self.view addSubview:userRegistView];
-    }
 }
 
 - (void)viewDidLayoutSubviews
@@ -66,6 +53,9 @@
 
 -(void)initBaseData
 {
+    if([FileUtil isExistsFilePath:[FileUtil dataFilePath:kUserInfoPath]]){
+        self.userInfoDataModel = [ZLUserInfoDataModel getUserInfoDataModel];
+    }
     self.stepsCountDataModel = [ZLStepsCountDataModel getTodayStepsCountDataModel];
     [self updateLabelStepsCount:self.stepsCountDataModel.stepsCount];
     [self updateLabelDistance:self.stepsCountDataModel.meterDistance];

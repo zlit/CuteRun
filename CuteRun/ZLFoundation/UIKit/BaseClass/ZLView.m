@@ -1,5 +1,5 @@
 //
-//  ZLUserRegistView.h
+//  ZLView.m
 //  CuteRun
 //
 //  Created by LiZhaolei on 14-10-8.
@@ -8,6 +8,6 @@
 
 #import "ZLView.h"
 
-@interface ZLUserRegistView : ZLView <UITableViewDataSource,UITableViewDelegate,UIPickerViewDelegate,UIPickerViewDataSource>
+@implementation ZLView
 
 @end

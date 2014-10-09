@@ -127,6 +127,22 @@
     }
     return result;
 }
+
++ (instancetype)zl_extractFromXib
+{
+    NSString* viewName = NSStringFromClass([self class]);
+    NSArray *views = [[NSBundle mainBundle] loadNibNamed:viewName owner:nil options:nil];
+    Class   targetClass = NSClassFromString(viewName);
+    
+    for (UIView *view in views) {
+        if ([view isMemberOfClass:targetClass]) {
+            return view;
+        }
+    }
+    
+    return nil;
+}
+
 #pragma mark - 删除视图
 - (void)zl_removeAllSubviews
 {
@@ -183,6 +199,4 @@
         completion(YES);
     }
 }
-
-
 @end

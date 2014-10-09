@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 PS. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ZLView.h"
 
-@interface ZLNaviBackgroundView : UIView
+@interface ZLNaviBackgroundView : ZLView
 
 - (UIImage*)imageFromSelf;
 

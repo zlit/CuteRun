@@ -10,6 +10,10 @@
 #import "ZLLeftMenuViewController.h"
 #import "RESideMenu.h"
 #import "ZLStepCountingViewController.h"
+#import "ZLUserRegistView.h"
+#import "FileUtil.h"
+#import "ZLUserInfoDataModel.h"
+#import "UIColor+CTExtensions.h"
 
 @interface AppDelegate ()
 
@@ -42,9 +46,20 @@
     sideMenuViewController.contentViewShadowRadius = 12;
     sideMenuViewController.contentViewShadowEnabled = YES;
     self.window.rootViewController = sideMenuViewController;
-    
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor zl_getColorWithRed:246.0
+                                                        green:246.0
+                                                         blue:246.0
+                                                        alpha:1.0];
     [self.window makeKeyAndVisible];
+    
+    if([FileUtil isExistsFilePath:[FileUtil dataFilePath:kUserInfoPath]] == NO){
+        ZLUserRegistView *userRegistView = [[ZLUserRegistView alloc] initWithFrame:CGRectMake(0, 0, zl_screenWidth, zl_screenHeight)];
+        [self.window addSubview:userRegistView];
+    }
+
+    
+    
+
     return YES;
 }
 

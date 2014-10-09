@@ -16,9 +16,17 @@
     if(navigationBar != nil){
         navigationBarHeight = navigationBar.frame.size.height;
     }
-    float titleBarWidth = [UIApplication sharedApplication].statusBarFrame.size.width;
-    float titleBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height + navigationBarHeight;
+    float titleBarWidth = zl_statusBarWidth;
+    float titleBarHeight = zl_statusBarHeight + navigationBarHeight;
     return CGSizeMake(titleBarWidth, titleBarHeight);
+}
+
++(CGPoint)getMiddlePositionWithViewSize:(CGSize) viewSize
+                             targetSize:(CGSize) targetSize
+{
+    float orginX = (targetSize.width - viewSize.width)/2.0;
+    float orginY = (targetSize.height - viewSize.height)/2.0;
+    return CGPointMake(ceilf(orginX) , ceilf(orginY));
 }
 
 @end

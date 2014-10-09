@@ -36,9 +36,19 @@
 		1B42830219E3DCC2005DB9A3 /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42830119E3DCC2005DB9A3 /* FileUtil.m */; };
 		1B42830519E3E4DB005DB9A3 /* ZLUserInfoDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42830419E3E4DB005DB9A3 /* ZLUserInfoDataModel.m */; };
 		1B42831419E4C05C005DB9A3 /* ZLNaviBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42831119E4C05C005DB9A3 /* ZLNaviBackgroundView.m */; };
-		1B42831519E4C05D005DB9A3 /* ZLUserRegistView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42831319E4C05C005DB9A3 /* ZLUserRegistView.m */; };
-		1B42831719E4C1C8005DB9A3 /* ZLUserRegistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B42831619E4C1C8005DB9A3 /* ZLUserRegistView.xib */; };
 		1B42831A19E4C2E4005DB9A3 /* ZLSystemParameterUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42831919E4C2E4005DB9A3 /* ZLSystemParameterUtil.m */; };
+		1B42832119E4C903005DB9A3 /* ZLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42832019E4C902005DB9A3 /* ZLView.m */; };
+		1B42833819E4D8A0005DB9A3 /* NSArray+CTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42832519E4D8A0005DB9A3 /* NSArray+CTExtensions.m */; };
+		1B42833919E4D8A0005DB9A3 /* NSData+CTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42832719E4D8A0005DB9A3 /* NSData+CTExtensions.m */; };
+		1B42833A19E4D8A0005DB9A3 /* NSDate+CTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42832919E4D8A0005DB9A3 /* NSDate+CTExtensions.m */; };
+		1B42833B19E4D8A0005DB9A3 /* NSDictionary+CTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42832B19E4D8A0005DB9A3 /* NSDictionary+CTExtensions.m */; };
+		1B42833D19E4D8A0005DB9A3 /* NSInvocation+CTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42832F19E4D8A0005DB9A3 /* NSInvocation+CTExtensions.m */; };
+		1B42833E19E4D8A0005DB9A3 /* NSNotificationCenter+CTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42833119E4D8A0005DB9A3 /* NSNotificationCenter+CTExtensions.m */; };
+		1B42834019E4D8A0005DB9A3 /* NSString+CTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42833519E4D8A0005DB9A3 /* NSString+CTExtensions.m */; };
+		1B42834119E4D8A0005DB9A3 /* NSURL+CTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42833719E4D8A0005DB9A3 /* NSURL+CTExtensions.m */; };
+		1B42834719E5219D005DB9A3 /* DRNRealTimeBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42834419E5219D005DB9A3 /* DRNRealTimeBlurView.m */; };
+		1B42834819E5219D005DB9A3 /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42834619E5219D005DB9A3 /* UIImage+BoxBlur.m */; };
+		1B42834C19E683D7005DB9A3 /* ZLUserRegistView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B42834A19E683D7005DB9A3 /* ZLUserRegistView.m */; };
 		310AE65BEB164825A43188A8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C38429C7C31343B193CA44FA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -106,11 +116,33 @@
 		1B42830419E3E4DB005DB9A3 /* ZLUserInfoDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLUserInfoDataModel.m; sourceTree = "<group>"; };
 		1B42831019E4C05C005DB9A3 /* ZLNaviBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLNaviBackgroundView.h; sourceTree = "<group>"; };
 		1B42831119E4C05C005DB9A3 /* ZLNaviBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLNaviBackgroundView.m; sourceTree = "<group>"; };
-		1B42831219E4C05C005DB9A3 /* ZLUserRegistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLUserRegistView.h; sourceTree = "<group>"; };
-		1B42831319E4C05C005DB9A3 /* ZLUserRegistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLUserRegistView.m; sourceTree = "<group>"; };
-		1B42831619E4C1C8005DB9A3 /* ZLUserRegistView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZLUserRegistView.xib; sourceTree = "<group>"; };
 		1B42831819E4C2E4005DB9A3 /* ZLSystemParameterUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLSystemParameterUtil.h; sourceTree = "<group>"; };
 		1B42831919E4C2E4005DB9A3 /* ZLSystemParameterUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLSystemParameterUtil.m; sourceTree = "<group>"; };
+		1B42831F19E4C902005DB9A3 /* ZLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLView.h; sourceTree = "<group>"; };
+		1B42832019E4C902005DB9A3 /* ZLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLView.m; sourceTree = "<group>"; };
+		1B42832319E4D8A0005DB9A3 /* Foundation+CTExtentions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+CTExtentions.h"; sourceTree = "<group>"; };
+		1B42832419E4D8A0005DB9A3 /* NSArray+CTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CTExtensions.h"; sourceTree = "<group>"; };
+		1B42832519E4D8A0005DB9A3 /* NSArray+CTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CTExtensions.m"; sourceTree = "<group>"; };
+		1B42832619E4D8A0005DB9A3 /* NSData+CTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CTExtensions.h"; sourceTree = "<group>"; };
+		1B42832719E4D8A0005DB9A3 /* NSData+CTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CTExtensions.m"; sourceTree = "<group>"; };
+		1B42832819E4D8A0005DB9A3 /* NSDate+CTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CTExtensions.h"; sourceTree = "<group>"; };
+		1B42832919E4D8A0005DB9A3 /* NSDate+CTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CTExtensions.m"; sourceTree = "<group>"; };
+		1B42832A19E4D8A0005DB9A3 /* NSDictionary+CTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CTExtensions.h"; sourceTree = "<group>"; };
+		1B42832B19E4D8A0005DB9A3 /* NSDictionary+CTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CTExtensions.m"; sourceTree = "<group>"; };
+		1B42832E19E4D8A0005DB9A3 /* NSInvocation+CTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+CTExtensions.h"; sourceTree = "<group>"; };
+		1B42832F19E4D8A0005DB9A3 /* NSInvocation+CTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+CTExtensions.m"; sourceTree = "<group>"; };
+		1B42833019E4D8A0005DB9A3 /* NSNotificationCenter+CTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+CTExtensions.h"; sourceTree = "<group>"; };
+		1B42833119E4D8A0005DB9A3 /* NSNotificationCenter+CTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+CTExtensions.m"; sourceTree = "<group>"; };
+		1B42833419E4D8A0005DB9A3 /* NSString+CTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CTExtensions.h"; sourceTree = "<group>"; };
+		1B42833519E4D8A0005DB9A3 /* NSString+CTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CTExtensions.m"; sourceTree = "<group>"; };
+		1B42833619E4D8A0005DB9A3 /* NSURL+CTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+CTExtensions.h"; sourceTree = "<group>"; };
+		1B42833719E4D8A0005DB9A3 /* NSURL+CTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+CTExtensions.m"; sourceTree = "<group>"; };
+		1B42834319E5219D005DB9A3 /* DRNRealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRNRealTimeBlurView.h; sourceTree = "<group>"; };
+		1B42834419E5219D005DB9A3 /* DRNRealTimeBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRNRealTimeBlurView.m; sourceTree = "<group>"; };
+		1B42834519E5219D005DB9A3 /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
+		1B42834619E5219D005DB9A3 /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
+		1B42834919E683D7005DB9A3 /* ZLUserRegistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLUserRegistView.h; sourceTree = "<group>"; };
+		1B42834A19E683D7005DB9A3 /* ZLUserRegistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLUserRegistView.m; sourceTree = "<group>"; };
 		438AF8B3111247D6B26DDDD2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C38429C7C31343B193CA44FA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -224,6 +256,7 @@
 		1B25BF0C19DE4BD100CC32BC /* Extern */ = {
 			isa = PBXGroup;
 			children = (
+				1B42834219E5219D005DB9A3 /* RealTimeBlurView */,
 				1B4282EC19E260DC005DB9A3 /* ZLLocationManager */,
 				1B4282DE19E0E243005DB9A3 /* ZLAccelerometerManager */,
 				1B4282D719E00A59005DB9A3 /* PlayPauseView */,
@@ -275,6 +308,7 @@
 		1B25BF3819DEA09600CC32BC /* ZLFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				1B42832219E4D8A0005DB9A3 /* FoundationKit */,
 				1B4282FF19E3DCC2005DB9A3 /* Utils */,
 				1B25BF4B19DECDB700CC32BC /* Device */,
 				1B25BF3919DEA09600CC32BC /* UIKit */,
@@ -296,6 +330,8 @@
 			children = (
 				1B25BF3F19DEA0B500CC32BC /* ZLViewController.h */,
 				1B25BF4019DEA0B500CC32BC /* ZLViewController.m */,
+				1B42831F19E4C902005DB9A3 /* ZLView.h */,
+				1B42832019E4C902005DB9A3 /* ZLView.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -372,13 +408,47 @@
 		1B42830F19E4C05C005DB9A3 /* VIew */ = {
 			isa = PBXGroup;
 			children = (
+				1B42834919E683D7005DB9A3 /* ZLUserRegistView.h */,
+				1B42834A19E683D7005DB9A3 /* ZLUserRegistView.m */,
 				1B42831019E4C05C005DB9A3 /* ZLNaviBackgroundView.h */,
 				1B42831119E4C05C005DB9A3 /* ZLNaviBackgroundView.m */,
-				1B42831219E4C05C005DB9A3 /* ZLUserRegistView.h */,
-				1B42831319E4C05C005DB9A3 /* ZLUserRegistView.m */,
-				1B42831619E4C1C8005DB9A3 /* ZLUserRegistView.xib */,
 			);
 			path = VIew;
+			sourceTree = "<group>";
+		};
+		1B42832219E4D8A0005DB9A3 /* FoundationKit */ = {
+			isa = PBXGroup;
+			children = (
+				1B42832319E4D8A0005DB9A3 /* Foundation+CTExtentions.h */,
+				1B42832419E4D8A0005DB9A3 /* NSArray+CTExtensions.h */,
+				1B42832519E4D8A0005DB9A3 /* NSArray+CTExtensions.m */,
+				1B42832619E4D8A0005DB9A3 /* NSData+CTExtensions.h */,
+				1B42832719E4D8A0005DB9A3 /* NSData+CTExtensions.m */,
+				1B42832819E4D8A0005DB9A3 /* NSDate+CTExtensions.h */,
+				1B42832919E4D8A0005DB9A3 /* NSDate+CTExtensions.m */,
+				1B42832A19E4D8A0005DB9A3 /* NSDictionary+CTExtensions.h */,
+				1B42832B19E4D8A0005DB9A3 /* NSDictionary+CTExtensions.m */,
+				1B42832E19E4D8A0005DB9A3 /* NSInvocation+CTExtensions.h */,
+				1B42832F19E4D8A0005DB9A3 /* NSInvocation+CTExtensions.m */,
+				1B42833019E4D8A0005DB9A3 /* NSNotificationCenter+CTExtensions.h */,
+				1B42833119E4D8A0005DB9A3 /* NSNotificationCenter+CTExtensions.m */,
+				1B42833419E4D8A0005DB9A3 /* NSString+CTExtensions.h */,
+				1B42833519E4D8A0005DB9A3 /* NSString+CTExtensions.m */,
+				1B42833619E4D8A0005DB9A3 /* NSURL+CTExtensions.h */,
+				1B42833719E4D8A0005DB9A3 /* NSURL+CTExtensions.m */,
+			);
+			path = FoundationKit;
+			sourceTree = "<group>";
+		};
+		1B42834219E5219D005DB9A3 /* RealTimeBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				1B42834319E5219D005DB9A3 /* DRNRealTimeBlurView.h */,
+				1B42834419E5219D005DB9A3 /* DRNRealTimeBlurView.m */,
+				1B42834519E5219D005DB9A3 /* UIImage+BoxBlur.h */,
+				1B42834619E5219D005DB9A3 /* UIImage+BoxBlur.m */,
+			);
+			path = RealTimeBlurView;
 			sourceTree = "<group>";
 		};
 		D01ED001381145D4B6F73188 /* Frameworks */ = {
@@ -474,7 +544,6 @@
 			files = (
 				1B25BF1F19DE83A500CC32BC /* Images.xcassets in Resources */,
 				1B4282D119DFE38C005DB9A3 /* ZLStepCountingViewController.xib in Resources */,
-				1B42831719E4C1C8005DB9A3 /* ZLUserRegistView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,27 +596,38 @@
 			files = (
 				1B42831419E4C05C005DB9A3 /* ZLNaviBackgroundView.m in Sources */,
 				1B25BF1619DE4BD100CC32BC /* RESideMenu.m in Sources */,
+				1B42833E19E4D8A0005DB9A3 /* NSNotificationCenter+CTExtensions.m in Sources */,
 				1B129AFA19DD661500EAE0DC /* AppDelegate.m in Sources */,
 				1B25BF4419DEA25E00CC32BC /* UIColor+CTExtensions.m in Sources */,
 				1B4282EF19E260DC005DB9A3 /* ZLLocationManager.m in Sources */,
 				1B25BF4119DEA0B500CC32BC /* ZLViewController.m in Sources */,
 				1B25BF1C19DE4CA100CC32BC /* ZLLeftMenuViewController.m in Sources */,
+				1B42833B19E4D8A0005DB9A3 /* NSDictionary+CTExtensions.m in Sources */,
 				1B4282E519E0F29C005DB9A3 /* ZLStepsCountDataModel.m in Sources */,
 				1B25BF2919DE879700CC32BC /* MDRadialProgressView.m in Sources */,
+				1B42834C19E683D7005DB9A3 /* ZLUserRegistView.m in Sources */,
 				1B25BF1719DE4BD100CC32BC /* UIViewController+RESideMenu.m in Sources */,
 				1B25BF1519DE4BD100CC32BC /* RECommonFunctions.m in Sources */,
 				1B25BF2719DE879700CC32BC /* MDRadialProgressLabel.m in Sources */,
 				1B25BF4E19DECDB700CC32BC /* ZLDevice.m in Sources */,
 				1B42830519E3E4DB005DB9A3 /* ZLUserInfoDataModel.m in Sources */,
 				1B25BF1D19DE4CA100CC32BC /* ZLStepCountingViewController.m in Sources */,
+				1B42833A19E4D8A0005DB9A3 /* NSDate+CTExtensions.m in Sources */,
+				1B42834819E5219D005DB9A3 /* UIImage+BoxBlur.m in Sources */,
 				1B25BF2819DE879700CC32BC /* MDRadialProgressTheme.m in Sources */,
+				1B42833819E4D8A0005DB9A3 /* NSArray+CTExtensions.m in Sources */,
 				1B42830219E3DCC2005DB9A3 /* FileUtil.m in Sources */,
 				1B25BF3E19DEA09600CC32BC /* UIView+CTExtensions.m in Sources */,
 				1B129AF719DD661500EAE0DC /* main.m in Sources */,
 				1B4282DA19E00A9F005DB9A3 /* ZLPlayPauseView.m in Sources */,
+				1B42832119E4C903005DB9A3 /* ZLView.m in Sources */,
 				1B42831A19E4C2E4005DB9A3 /* ZLSystemParameterUtil.m in Sources */,
+				1B42834719E5219D005DB9A3 /* DRNRealTimeBlurView.m in Sources */,
+				1B42833919E4D8A0005DB9A3 /* NSData+CTExtensions.m in Sources */,
+				1B42834019E4D8A0005DB9A3 /* NSString+CTExtensions.m in Sources */,
+				1B42833D19E4D8A0005DB9A3 /* NSInvocation+CTExtensions.m in Sources */,
+				1B42834119E4D8A0005DB9A3 /* NSURL+CTExtensions.m in Sources */,
 				1B4282E119E0E243005DB9A3 /* ZLAccelerometerManager.m in Sources */,
-				1B42831519E4C05D005DB9A3 /* ZLUserRegistView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

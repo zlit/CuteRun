@@ -131,6 +131,8 @@
  */
 + (UIView *)zl_createViewWithXibName:(NSString *)xibName owner:(id)owner;
 
++ (instancetype)zl_extractFromXib;
+
 #pragma mark - 删除视图
 /**
  *  删除所有子视图

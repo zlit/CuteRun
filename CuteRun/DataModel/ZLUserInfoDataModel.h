@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define kUserInfoPath @"userInfo.txt"
+
 typedef NS_ENUM(NSInteger, ZLGenderType) {
     ZLGenderTypeNone = 0,
     ZLGenderTypeMale,
@@ -16,10 +18,13 @@ typedef NS_ENUM(NSInteger, ZLGenderType) {
 
 @interface ZLUserInfoDataModel : NSObject
 
-@property(nonatomic,copy) NSString *gender;//性别
+@property(nonatomic,assign) ZLGenderType gender;//性别
 @property(nonatomic,assign) float height;//身高
 @property(nonatomic,assign) float weight;//体重
 
 +(ZLUserInfoDataModel *)getUserInfoDataModel;
+-(NSString *)getBMIDescription;
+-(NSString *)getHealthWeightDescription;
+-(NSString *)getStandardWeightDescription;
 
 @end
