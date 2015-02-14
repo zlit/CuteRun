@@ -7,7 +7,7 @@
 //
 
 #import "ZLUserInfoDataModel.h"
-
+#import "FileUtil.h"
 
 
 @implementation ZLUserInfoDataModel
@@ -19,8 +19,43 @@
         self.gender = ZLGenderTypeMale;
         self.height = 170.0;
         self.weight = 60.0;
+        self.stepsCountPurpose = 5000;
     }
     return self;
+}
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"%d$%f$%f$%d",
+            self.gender,
+            self.height,
+            self.weight,
+            self.stepsCountPurpose];
+}
+
++(ZLUserInfoDataModel *)getUserInfoDataModel
+{
+    ZLUserInfoDataModel *userInfoDataModel = [[ZLUserInfoDataModel alloc] init];
+    NSString *filePath = [FileUtil dataFilePath:kUserInfoPath];
+    if([FileUtil isExistsFilePath:filePath]){
+        NSString *content = [FileUtil readWithContentsOfFile:filePath];
+        userInfoDataModel = [self initUserInfoDataModelWithContent:content];
+    }
+    return userInfoDataModel;
+}
+
++(ZLUserInfoDataModel *)initUserInfoDataModelWithContent:(NSString *) content
+{
+    ZLUserInfoDataModel *userInfoDataModel = [[ZLUserInfoDataModel alloc] init];
+    NSArray *splitArray = [content componentsSeparatedByString:@"$"];
+    if([splitArray count] > 0){
+        userInfoDataModel.gender = [((NSString *)[splitArray zl_objectAtIndex:0]) intValue];
+        userInfoDataModel.height = [NSDecimalNumber decimalNumberWithString:(NSString *)[splitArray zl_objectAtIndex:1]].floatValue;
+        userInfoDataModel.weight = [NSDecimalNumber decimalNumberWithString:(NSString *)[splitArray zl_objectAtIndex:2]].floatValue;
+        userInfoDataModel.stepsCountPurpose = [((NSString *)[splitArray zl_objectAtIndex:3]) floatValue];
+    }
+    
+    return userInfoDataModel;
 }
 
 -(NSString *)getBMIDescription
@@ -59,5 +94,14 @@
     return [NSString stringWithFormat:@"%d KG(1KG=2斤)",standardWeight];
 }
 
++(void)writeUserInfoDataModel:(ZLUserInfoDataModel *) userInfoDataModel
+{
+    NSString *content = [userInfoDataModel description];
+    
+    @synchronized(self)
+    {
+        [FileUtil writeContent:content filePath:[FileUtil dataFilePath:kUserInfoPath]];
+    }
+}
 
 @end

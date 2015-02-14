@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "ZLBaseModel.h"
 
-@interface ZLStepsCountDataModel : NSObject
+@interface ZLStepsCountDataModel : ZLBaseModel
 
 @property(nonatomic,assign) int timeInterval;//时间
 @property(nonatomic,assign) int stepsCount;//步数
@@ -19,6 +20,7 @@
 @property(nonatomic,copy) NSString *provinceName;//省
 @property(nonatomic,copy) NSString *cityName;//市
 @property(nonatomic,strong) NSDate *date;//日期
+@property(nonatomic,assign) int stepsCountPurpose;//当日目标
 
 +(ZLStepsCountDataModel *)getTodayStepsCountDataModel;
 +(void)writeStepsCountDataModel:(ZLStepsCountDataModel *) stepsCountDataModel;

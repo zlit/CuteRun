@@ -51,6 +51,19 @@
     [self moveDownSubViews:array];
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    if([FileUtil isExistsFilePath:[FileUtil dataFilePath:kUserInfoPath]] == NO){
+        ZLUserRegistView *userRegistView = [[ZLUserRegistView alloc] initWithFrame:CGRectMake(0, 0, zl_screenWidth, zl_screenHeight)];
+        [[UIApplication sharedApplication].keyWindow addSubview:userRegistView];
+        userRegistView.editCompleteCallback = ^(){
+            if([FileUtil isExistsFilePath:[FileUtil dataFilePath:kUserInfoPath]]){
+                self.userInfoDataModel = [ZLUserInfoDataModel getUserInfoDataModel];
+            }
+        };
+    }
+}
+
 -(void)initBaseData
 {
     if([FileUtil isExistsFilePath:[FileUtil dataFilePath:kUserInfoPath]]){

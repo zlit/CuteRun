@@ -52,14 +52,6 @@
                                                         alpha:1.0];
     [self.window makeKeyAndVisible];
     
-    if([FileUtil isExistsFilePath:[FileUtil dataFilePath:kUserInfoPath]] == NO){
-        ZLUserRegistView *userRegistView = [[ZLUserRegistView alloc] initWithFrame:CGRectMake(0, 0, zl_screenWidth, zl_screenHeight)];
-        [self.window addSubview:userRegistView];
-    }
-
-    
-    
-
     return YES;
 }
 

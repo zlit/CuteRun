@@ -23,13 +23,14 @@
         self.provinceName = @"";
         self.cityName = @"";
         self.date = [NSDate date];
+        self.stepsCountPurpose = 0;
     }
     return self;
 }
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"%d$%d$%d$%f$%f$%@$%@$%lf",
+    return [NSString stringWithFormat:@"%d$%d$%d$%f$%f$%@$%@$%lf$%d",
             self.timeInterval,
             self.stepsCount,
             self.meterDistance,
@@ -37,10 +38,11 @@
             self.kcal,
             self.provinceName,
             self.cityName,
-            [self.date timeIntervalSinceReferenceDate]];
+            [self.date timeIntervalSinceReferenceDate],
+            self.stepsCountPurpose];
 }
 
-+(NSDateFormatter *)getStepsCountDataFileName
++(NSDateFormatter *)getDateFormater
 {
     NSString *format = @"yyyyMMdd";
     NSDateFormatter *dateFormater = [[NSDateFormatter alloc] init];
@@ -51,7 +53,7 @@
 +(ZLStepsCountDataModel *)getTodayStepsCountDataModel
 {
     ZLStepsCountDataModel *todayStepsCountDataModel = [[ZLStepsCountDataModel alloc] init];
-    NSString *fileName = [[self getStepsCountDataFileName] stringFromDate:[NSDate date]];
+    NSString *fileName = [[self getDateFormater] stringFromDate:[NSDate date]];
     NSString *filePath = [FileUtil dataFilePath:fileName];
     if([FileUtil isExistsFilePath:filePath]){
         NSString *content = [FileUtil readWithContentsOfFile:filePath];
@@ -65,15 +67,16 @@
     ZLStepsCountDataModel *todayStepsCountDataModel = [[ZLStepsCountDataModel alloc] init];
     NSArray *splitArray = [content componentsSeparatedByString:@"$"];
     if([splitArray count] > 0){
-        todayStepsCountDataModel.timeInterval = [((NSString *)[splitArray objectAtIndex:0]) intValue];
-        todayStepsCountDataModel.stepsCount = [((NSString *)[splitArray objectAtIndex:1]) intValue];
-        todayStepsCountDataModel.meterDistance = [((NSString *)[splitArray objectAtIndex:2]) intValue];
-        todayStepsCountDataModel.speedPerHour = [((NSString *)[splitArray objectAtIndex:3]) floatValue];
-        todayStepsCountDataModel.kcal = [((NSString *)[splitArray objectAtIndex:4]) floatValue];
-        todayStepsCountDataModel.provinceName = (NSString *)[splitArray objectAtIndex:5];
-        todayStepsCountDataModel.cityName = (NSString *)[splitArray objectAtIndex:6];
-        double dateTimeInterval = [((NSString *)[splitArray objectAtIndex:7]) doubleValue];;
+        todayStepsCountDataModel.timeInterval = [((NSString *)[splitArray zl_objectAtIndex:0]) intValue];
+        todayStepsCountDataModel.stepsCount = [((NSString *)[splitArray zl_objectAtIndex:1]) intValue];
+        todayStepsCountDataModel.meterDistance = [((NSString *)[splitArray zl_objectAtIndex:2]) intValue];
+        todayStepsCountDataModel.speedPerHour = [((NSString *)[splitArray zl_objectAtIndex:3]) floatValue];
+        todayStepsCountDataModel.kcal = [((NSString *)[splitArray zl_objectAtIndex:4]) floatValue];
+        todayStepsCountDataModel.provinceName = (NSString *)[splitArray zl_objectAtIndex:5];
+        todayStepsCountDataModel.cityName = (NSString *)[splitArray zl_objectAtIndex:6];
+        double dateTimeInterval = [((NSString *)[splitArray zl_objectAtIndex:7]) doubleValue];;
         todayStepsCountDataModel.date = [NSDate dateWithTimeIntervalSinceReferenceDate:dateTimeInterval];
+        todayStepsCountDataModel.stepsCountPurpose = [((NSString *)[splitArray zl_objectAtIndex:8]) intValue];
     }
     
     return todayStepsCountDataModel;
@@ -81,7 +84,7 @@
 
 +(void)writeStepsCountDataModel:(ZLStepsCountDataModel *) stepsCountDataModel
 {
-    NSString *fileName = [[self getStepsCountDataFileName] stringFromDate:[NSDate date]];
+    NSString *fileName = [[self getDateFormater] stringFromDate:[NSDate date]];
     NSString *content = [stepsCountDataModel description];
     
     @synchronized(self)

@@ -7,7 +7,10 @@
 //
 
 #import "ZLView.h"
+typedef void (^EditUserInfoCompleteCallback)(void);
 
 @interface ZLUserRegistView : ZLView <UITableViewDataSource,UITableViewDelegate,UIPickerViewDelegate,UIPickerViewDataSource>
+
+@property(nonatomic, copy) EditUserInfoCompleteCallback editCompleteCallback;
 
 @end
