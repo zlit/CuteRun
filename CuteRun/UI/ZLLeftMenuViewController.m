@@ -48,8 +48,8 @@
             [self.sideMenuViewController hideMenuViewController];
             break;
         case 1:
-//            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[[DEMOSecondViewController alloc] init]]
-//                                                         animated:YES];
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[[DEMOSecondViewController alloc] init]]
+                                                         animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;
         default:
@@ -90,7 +90,7 @@
         cell.selectedBackgroundView = [[UIView alloc] init];
     }
     
-    NSArray *titles = @[@"动次打次", @"历史", @"设置", @"关于"];
+    NSArray *titles = @[@"历史记录", @"个人设置",@"去五星评分",@"关于"];
     NSArray *images = @[@"IconHome", @"IconCalendar", @"IconProfile", @"IconSettings"];
     UILabel *textLabel = [[UILabel alloc] init];
     textLabel.text = titles[indexPath.row];

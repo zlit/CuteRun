@@ -261,6 +261,9 @@
 -(void)updateLabelSpeedWithDisance:(CLLocationDistance)distance
                       timeInterval:(NSTimeInterval) timeInterval
 {
+    if (distance == 0 || timeInterval == 0) {
+        return;
+    }
     float speed = distance / timeInterval * 3.6;
     self.stepsCountDataModel.speedPerHour = speed;
     NSString *speedStr = [NSString stringWithFormat:@"%.2lf",speed];
